@@ -1,0 +1,1 @@
+![Kiirocoin](https://explorer.kiirocoin.org/img/logo.png)
