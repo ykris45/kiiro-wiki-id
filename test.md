@@ -3,6 +3,7 @@ how to upgrade collateral to your masternode
 if u lost or dont remember all datas used for previous masternode, login to your vps, then type evoznode status, will get something like this, so save all infos!
 
  kiirocoin-cli evoznode status
+```json
 {
   "outpoint": "COutPoint(f4deca21e0042d5a635a76020a71ace6b2887020d709d876d878108270xxxxxx, 0)",
   "service": "159.69.15.xxx:8999",
@@ -24,7 +25,8 @@ if u lost or dont remember all datas used for previous masternode, login to your
   },
   "state": "READY",
   "status": "Ready"
-
+}
+```
 
 the secret key is in kiirocoin.conf file always on vps
 
