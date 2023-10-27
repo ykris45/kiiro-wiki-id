@@ -1,5 +1,5 @@
 
-                     <h1>Kiiro masternode setup guide</h1>
+                     # <h1>Kiiro masternode setup guide</h1>
 
                      <p class="p-summary">Follow this guide to setup your masternode from scratch</p>           
 
