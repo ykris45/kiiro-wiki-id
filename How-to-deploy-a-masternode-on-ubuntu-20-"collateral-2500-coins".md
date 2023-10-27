@@ -1,11 +1,10 @@
-
-                   
+           
 
 <h2 id="getting-started">Getting Started</h2>
 
 
 
-<p>Whether you are hosting with a masternode provider or doing it on your own, ensure you have the latest <a href="https://github.com/Kiirocoin/kiiro/tree/main/" target="_blank">Kiiro wallet</a> and you have already obtained your <strong>1000 KIIRO</strong> (preferably just a bit more to cover fees when you’re transferring around). <strong>Steps 1 and 2 are still required</strong> even if you are going for a masternode provider.</p>
+<p>Whether you are hosting with a masternode provider or doing it on your own, ensure you have the latest <a href="https://github.com/Kiirocoin/kiiro/tree/main/" target="_blank">Kiiro wallet</a> and you have already obtained your <strong>2500 KIIRO</strong> (preferably just a bit more to cover fees when you’re transferring around). <strong>Steps 1 and 2 are still required</strong> even if you are going for a masternode provider.</p>
 
 
 
@@ -33,11 +32,11 @@
 
 
 
-<h3 id="step-2-collateral-your-1000-kiiro-on-your-desktop-wallet">Step 2: collateral your 1000 KIIRO on your Desktop wallet</h3>
+<h3 id="step-2-collateral-your-2500-kiiro-on-your-desktop-wallet">Step 2: collateral your 2500 KIIRO on your Desktop wallet</h3>
 
 
 
-<p>Your collateral address is where you will be storing your 1000 KIIRO.</p>
+<p>Your collateral address is where you will be storing your 2500 KIIRO.</p>
 
 
 
@@ -65,11 +64,11 @@
 
 
 
-<p>In one single transaction, send <strong>exactly 1000 KIIRO</strong> into the masternode collateral address that you created. Do not send 500 and then another 500. <strong>It has to be in one single transaction. Do not tick subtract fee from amount.</strong></p>
+<p>In one single transaction, send <strong>exactly 2500 KIIRO</strong> into the masternode collateral address that you created. Do not send 500 and then another 500. <strong>It has to be in one single transaction. Do not tick subtract fee from amount.</strong></p>
 
 
 
-<p>It is not recommended to send it direct from an exchange as they might deduct certain withdrawal fees resulting in less than 1000 KIIRO in that transfer.</p>
+<p>It is not recommended to send it direct from an exchange as they might deduct certain withdrawal fees resulting in less than 2500 KIIRO in that transfer.</p>
 
 
 
@@ -85,19 +84,11 @@
 
 
 
-<p>If you are doing more than one masternode, special care is required to ensure that you are creating collaterals properly. You do not want to break the previous 1000 KIIRO collateral you just made by taking funds from that collateral.</p>
+<p>If you are doing more than one masternode, special care is required to ensure that you are creating collaterals properly. You do not want to break the previous 2500 KIIRO collateral you just made by taking funds from that collateral.</p>
 
 
 
-<p>To do this, on your <strong>local desktop wallet</strong> turn on coin control by going to <strong>Settings &gt; Options &gt; Wallet</strong> and click on <strong>Enable coin control features.</strong> This will enable control of which funds you are using when making your next 1000 KIIRO collateral.</p>
-
-
-
-
-
-
-
-<p>Then go to your Send tab, and you will see <strong>Coin Control Features</strong>. Click on <strong>Inputs</strong>. You should see your 1000 KIIRO collateral there. Right click and click <strong>Lock Unspent</strong>. This means that when making your new collateral, your wallet will not touch these funds.</p>
+<p>To do this, on your <strong>local desktop wallet</strong> turn on coin control by going to <strong>Settings &gt; Options &gt; Wallet</strong> and click on <strong>Enable coin control features.</strong> This will enable control of which funds you are using when making your next 2500 KIIRO collateral.</p>
 
 
 
@@ -105,7 +96,15 @@
 
 
 
-<p>Once you have done this, you can make the next 1000 KIIRO collateral for your next masternode. Repeat this everytime you have made a new masternode.</p>
+<p>Then go to your Send tab, and you will see <strong>Coin Control Features</strong>. Click on <strong>Inputs</strong>. You should see your 2500 KIIRO collateral there. Right click and click <strong>Lock Unspent</strong>. This means that when making your new collateral, your wallet will not touch these funds.</p>
+
+
+
+
+
+
+
+<p>Once you have done this, you can make the next 2500 KIIRO collateral for your next masternode. Repeat this everytime you have made a new masternode.</p>
 
 
 
@@ -401,12 +400,12 @@
 
 
 
-<p><code class="language-plaintext highlighter-rouge">wget https://github.com/Kiirocoin/kiiro/releases/download/v1.0.0.3/ubuntu-18.zip</code></p>
+<p><code class="language-plaintext highlighter-rouge">wget https://github.com/Kiirocoin/kiiro/releases/download/v1.0.0.4/kiirocoin-1.0.0.4-linux-20.04.zip</code></p>
 
 <p><code>apt install unzip  </code>
 <p><code>cd root </code></p>
-<p><code>unzip ubuntu-18.zip</code></p>
-<p><code>cd ubuntu-18</code></p>
+<p><code>unzip kiirocoin-1.0.0.4-linux-20.04.zip</code></p>
+<p><code>cd kiirocoin-1.0.0.4-linux-20.04.zip</code></p>
 <p><code>sudo mv kiirocoind /usr/bin</code></p>
 <p><code>sudo mv kiirocoin-cli /usr/bin</code></p>
 <p><code>sudo cd /usr/bin </code></p>
@@ -513,7 +512,7 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>collateralHash: transaction ID of your 1000 KIIRO collateral (from "evoznode outputs")
 
-collateralIndex: transaction index of your 1000 KIIRO collateral (from "evoznode outputs")
+collateralIndex: transaction index of your 2500 KIIRO collateral (from "evoznode outputs")
 
 ipAndPort: the IP address and port of your masternode
 
