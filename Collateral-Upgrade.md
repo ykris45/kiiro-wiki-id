@@ -1,7 +1,7 @@
 # How to upgrade collateral
 
 ### On your Masternode (MN) VPS
-1. Run: **kiirocoin-cli evoznode status**
+1. Run:  **`kiirocoin-cli evoznode status`**
 
 2. Copy the output to be used when registering your MN with the new collateral amount
 ```json
@@ -28,7 +28,7 @@
   "status": "Ready"
 }
 ```
-3. Run: **sudo systemctl stop kiirocoind.service**
+3. Run: **`sudo systemctl stop kiirocoind.service`**
 
 ### On your Kiirocoin Core Wallet
 
@@ -75,4 +75,4 @@
 
 12. Run the above command in your debug console (Will need to run **walletpassphrase your_wallet_passphrase 60** to unlock)
 
-13. Go back to your VPS and run: **sudo systemctl start kiirocoind.servce**
+13. Go back to your VPS and run: **`sudo systemctl start kiirocoind.servce`**
