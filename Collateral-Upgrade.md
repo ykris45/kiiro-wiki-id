@@ -66,7 +66,7 @@ sudo systemctl stop kiirocoind.service
 
 9. From the debug console run: `evoznode outputs`
 
-10. Find the transaction for your 2500 Kirro collateral and take note of the index (0 or 1)
+10. Find the transaction for your 2500 Kiiro collateral and take note of the index (0 or 1)
 
 11. Create protx command
   * protx register collateralHash collateralIndex ipAndPort ownerAddress operatorPubKey votingAddress operatorReward payoutAddress feeSourceAddress
