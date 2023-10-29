@@ -1,8 +1,9 @@
-how to upgrade collateral to your masternode
+##How to upgrade collateral
 
-if u lost or dont remember all datas used for previous masternode, login to your vps, then type evoznode status, will get something like this, so save all infos!
+On your Masternode (MN) run the following:
+kiirocoin-cli evoznode status
 
- kiirocoin-cli evoznode status
+Copy the output to be used when registering your MN with the new collateral amount
 ```json
 {
   "outpoint": "COutPoint(f4deca21e0042d5a635a76020a71ace6b2887020d709d876d878108270xxxxxx, 0)",
@@ -27,13 +28,10 @@ if u lost or dont remember all datas used for previous masternode, login to your
   "status": "Ready"
 }
 ```
+## On your Kiirocoin Core Wallet
 
-the secret key is in kiirocoin.conf file always on vps
-
-
-
-once saved do as follow:
-go to your wallet and create new collateral address
+1. Create new collateral address and for example label it **MN1 Collateral 2500**
+2. Send 2500 Kiiro to this address
 sent there exactly 2500 coins
 after 1 confirmation save trx id
 create new fee address and send there 0.5 coin
