@@ -1,12 +1,13 @@
-# How to upgrade collateral
+# Cara Meningkatkan Jaminan
 
-### On your Masternode (MN) VPS
-1. Run:  
+### Di VPS Masternode (MN) Milik Anda
+
+1. Jalankan:  
 ```
 kiirocoin-cli evoznode status
 ```
 
-2. Copy the output to be used when registering your MN with the new collateral amount
+2. Salinlah kode berikut ini pada bagian output untuk dapat digunakan saat mendaftarkan MN Anda dengan jumlah jaminan yang baru
 ```json
 {
   "outpoint": "COutPoint(f4deca21e0042d5a635a76020a71ace6b2887020d709d876d878108270xxxxxx, 0)",
@@ -31,44 +32,44 @@ kiirocoin-cli evoznode status
   "status": "Ready"
 }
 ```
-3. Run: 
+3. Jalankan: 
 ```
 sudo systemctl stop kiirocoind.service
 ```
 
-### On your Kiirocoin Core Wallet
+### Pada Dompet Kiirocoin Core milik Anda
 
-1. From the **Receive** tab, label it **MN1 Collateral 2500** and amount 2500, the click **Request Payment**
+1. Dari bagian tab **Receive**, berilah label sebagai berikut ini **MN1 Collateral 2500** sertakan jumlah sebesar 2500, lalu klik **Request Payment**
 
 ![image](https://github.com/Kiirocoin/kiiro/assets/146014363/90edf2de-6942-4639-9b6f-430ead647cf2)
 
-2. From the following window click on **Copy Address**
+2. Dari jendela berikut klik **Copy Address**
 
 ![image](https://github.com/Kiirocoin/kiiro/assets/146014363/b1f05bb0-e2f4-46b1-bc88-bcacd99f0c01)
 
-3. Go to the **Send** Tab and Click on **Inputs**
+3. Pergi ke tab **Send** dan Klik **Inputs**
 
 ![image](https://github.com/Kiirocoin/kiiro/assets/146014363/bb6b8138-323a-4c0c-820e-00a24242a0d5)
 
-4. Right mouse click on the old collateral and select **Unlock unspent**
+4. Klik kanan mouse pada jaminan lama dan pilih **Unlock unspent**
 
 ![image](https://github.com/Kiirocoin/kiiro/assets/146014363/a0a475fb-8717-4bb7-92d0-d06abdc40091)
 
-5. Select enough inputs to make up 2500 KIIRO
+5. Pilih input yang cukup untuk menghasilkan 2500 KIIRO
 
-6. Enter in the address copied from step 2 and 2500 in the amount (**_do not check subtract fee from amount_**), click on send
+6. Masukkan alamat yang disalin dari langkah 2 dan 2500 dalam jumlah (**_jangan centang biaya pengurangan dari jumlah_**), klik kirim
 
 ![image](https://github.com/Kiirocoin/kiiro/assets/146014363/241d1c37-a642-48a0-ac12-bc8b706ff1ce)
 
-7. From the **Masternodes** tab ensure your old MN is no longer listed
+7. Dari tab **Masternodes** pastikan MN lama Anda tidak lagi terdaftar
 
-8. Ensure at least 1 confirmation from 2500 sent to your new collateral address
+8. Pastikan setidaknya 1 konfirmasi dari 2500 dikirimkan ke alamat jaminan baru Anda
 
-9. From the debug console run: `evoznode outputs`
+9. Dari konsol debug, jalankan: `evoznode outputs`
 
-10. Find the transaction for your 2500 Kiiro collateral and take note of the index (0 or 1)
+10. Temukan transaksi untuk agunan 2500 Kiiro Anda dan catat indeksnya (0 atau 1)
 
-11. Create protx command
+11. Buat perintah protx
   * protx register collateralHash collateralIndex ipAndPort ownerAddress operatorPubKey votingAddress operatorReward payoutAddress feeSourceAddress
     * collateralHash and collateralIndex from step 10
     * ipAndPort from **service** copied json response on VPS
@@ -79,9 +80,9 @@ sudo systemctl stop kiirocoind.service
     * payoutAddress from **payoutAddress** copied json response on VPS
     * feeSourceAddress can be and address you have with enough to cover the tx fee
 
-12. Run the above command in your debug console (Will need to run `walletpassphrase your_wallet_passphrase 60` to unlock)
+12. Jalankan perintah di atas di konsol debug Anda (Perlu menjalankan `walletpassphrase your_wallet_passphrase 60` untuk membuka kunci)
 
-13. Go back to your VPS and run: 
+13. Kembali ke VPS Milik Anda dan jalankan:
 ```
 sudo systemctl start kiirocoind.servce
 ```
